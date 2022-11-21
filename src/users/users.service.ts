@@ -15,4 +15,20 @@ export class UsersService {
         return this.repo.save(user);
     }
 
+    find(email: string) {
+        return this.repo.find({ where: { email } });
+    }
+
+    findOne(id: number) {
+        return this.repo.findOneBy({ id })
+    }
+
+    update() {
+
+    }
+
+    remove() {
+
+    }
+
 }
